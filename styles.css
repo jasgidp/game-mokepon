@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+body {
+    font-family: 'Comfortaa', cursive;
+    background-color: cadetblue;
+}
+
+
+input {
+    display: none;
+}
+
+input:checked+label {
+    background-color: aquamarine;
+    color: #11468F;
+}
+
+#selemasc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.titulo {
+    color: aliceblue;
+    font-size: 32px;
+}
+
+.subtitulo {
+    color: aliceblue;
+    font-size: 22px;
+}
+
+
+
+.Tarjetas,
+.tarjetasAtck {
+    display: flex;
+    gap: 10px;
+}
+
+.Tarjetamokepon {
+
+    width: 180px;
+    height: 100px;
+    background: #11468F;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.Tarjetamokepon img {
+    width: 80px;
+}
+
+#btnSeleccionarMascota {
+    width: 140px;
+    height: 50px;
+    background: transparent;
+    padding: 10px;
+    margin: 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Comfortaa', cursive;
+}
+
+
+#Ataque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btnattack {
+
+    width: 150px;
+    height: 50px;
+    background: #11468F;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-bottom: transparent;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Comfortaa', cursive;
+
+
+}
+
+
+#Mensaje {
+    width: 300px;
+    height: 80px;
+    padding: 20;
+    background-color: rgb(247, 249, 250);
+    margin-top: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+#btnreinicio {
+    border: none;
+    color: #11468F;
+    font-family: 'Comfortaa', cursive;
+
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+#NombreMascotaEnemigo,
+#NombreMascota {
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+#VidaMiMascotap,
+#VidaMascotaEnemigop {
+    font-size: 16px;
+    margin-bottom: 0;
+    color: aliceblue;
+}
+
+.ataques-jugador,
+.ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 360px) {
+
+    .Tarjetas,
+    .tarjetasAtck {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
